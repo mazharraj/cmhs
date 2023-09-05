@@ -6,10 +6,7 @@ export default function Notice({ notice, destination }) {
       <div className="flex md:flex-row flex-col text-center">
         <p className="bg-violet-900 py-3 px-14 text-white">নোটিশ</p>
         <div className="border-2 border-gray-400 bg-white flex overflow-hidden items-center h-[50px] w-full">
-          <marquee
-            behavior="scroll"
-            onMouseOver="this.stop();"
-            direction="left">
+          <marquee behavior="scroll" direction="left">
             <div className="flex items-center gap-10">
               <div className="flex items-center gap-2 text-gray-700">
                 <img src="logo.png" className="h-[20px]" alt="" />

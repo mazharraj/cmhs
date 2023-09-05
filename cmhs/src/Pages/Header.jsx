@@ -52,15 +52,15 @@ function Header() {
           <img src="logo.png" className="w-20 md:w-28 h-20 md:h-28 " alt="" />
           <div>
             <p className="font-bold text-xl md:text-3xl lg:text-5xl">
-              ধরেরবাড়ী মুসলিম হাই স্কুল এন্ড কলেজ
+              চৌধুরী মালঞ্চ উচ্চ বিদ্যালয়
             </p>
             <div className="bg-gray-900 my-1 h-[1px] w-full"></div>
             <p className="text-blue-800 text-base md:text-xl lg:text-3xl uppercase font-bold">
-              Dharerbari Muslim High School & College
+              Chowdhury Malancha High School
             </p>
-            <p className="text-red-800 pt-2 text-base md:text-xl lg:text-3xl font-bold">
-              প্রতিষ্ঠাতাঃ মরহুম মৌলভী রফাতুল্লাহ সরকার
-            </p>
+            {/* <p className="text-red-800 pt-2 text-base md:text-xl lg:text-3xl font-bold">
+              প্রতিষ্ঠাতাঃ 
+            </p> */}
           </div>
         </div>
         <div>

@@ -4,17 +4,15 @@ const pictures = [
   "schoolimage/image1.jpg",
   "schoolimage/image2.jpg",
   "schoolimage/image3.jpg",
-  "schoolimage/image4.jpg",
-  "schoolimage/image5.jpg",
 ];
 const PhotoAndNotice = ({ notice, destination }) => {
   return (
     <div>
       <div className="flex flex-col lg:flex-row  justify-between lg:py-4 lg:px-4 bg-white gap-4">
-        <div className="lg:w-[70%] md:h-[500px] overflow-hidden">
+        <div className="lg:w-[70%] md:h-[380px] overflow-hidden">
           <Carousel picture={pictures} />
         </div>
-        <div className="lg:w-[30%] md:h-[500px] px-1 overflow-hidden">
+        <div className="lg:w-[30%] md:h-[380px] px-1 overflow-hidden">
           <div className="bg-gray-500 text-white p-2 flex items-center justify-between">
             <p>সকল নোটিশ</p>
           </div>
