@@ -24,7 +24,7 @@ let notice = [
   "ছুটির জন্য আবেদন পত্র",
 ];
 let noticeDestination = [
-  "notice/পরীক্ষার ফলাফল ২৯-০৮-২০২৩ইং.pdf",
+  "notice/leave-notice-2020.pdf",
   "notice/প্রধান শিক্ষকের আদেশ.pdf",
   "notice/বার্ষিক বনভোজন.pdf",
   "notice/সাংস্কৃতিক অনুষ্ঠান.pdf",

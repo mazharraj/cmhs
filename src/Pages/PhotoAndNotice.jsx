@@ -19,7 +19,7 @@ const PhotoAndNotice = ({ notice, destination }) => {
           <marquee direction="up">
             <div className="flex flex-col gap-4 justify-between">
               <div className="bg-gray-200 p-2">
-                <a href="" target="blank">
+                <a href={destination[0]} target="blank">
                   {notice[0]}
                 </a>
               </div>
