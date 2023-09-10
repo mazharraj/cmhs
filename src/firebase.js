@@ -4,15 +4,13 @@ import { getAuth } from "firebase/auth";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAOSrgaSODg42PBHiiqPu8p3aTk5FTi2Oo",
-  authDomain: "log-in-form-5e657.firebaseapp.com",
-  projectId: "log-in-form-5e657",
-  storageBucket: "log-in-form-5e657.appspot.com",
-  messagingSenderId: "131244340961",
-  appId: "1:131244340961:web:0bf4fdc59bbea0732669a0",
-  measurementId: "G-7P94T86V8Q",
+  apiKey: "AIzaSyBySheA0s4B7dBzMvkucQYNq_XDPgLJ5tA",
+  authDomain: "chowdhury-malancha-school.firebaseapp.com",
+  projectId: "chowdhury-malancha-school",
+  storageBucket: "chowdhury-malancha-school.appspot.com",
+  messagingSenderId: "806009356456",
+  appId: "1:806009356456:web:7a7107202b122b3987429d",
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 

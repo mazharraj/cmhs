@@ -45,7 +45,7 @@ function Header() {
     <div>
       <div className="px-3 lg:px-[60px] xl:px-[100px] max-w-[1600px] mx-auto">
         <div className="bg-green-900 md:text-base text-sm py-2 px-4 flex items-center justify-between text-white">
-          <p>EIIN : 114688, MPO CODE : 4211071301</p>
+          <p>EIIN : 114696, MPO CODE : 4211091303</p>
 
           <div className="flex items-center gap-4">
             <p>{new Date().toLocaleDateString()}</p>
