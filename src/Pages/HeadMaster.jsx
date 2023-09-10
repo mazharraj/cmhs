@@ -6,7 +6,7 @@ export default function HeadMaster() {
       <div className="grid md:grid-cols-2 gap-4 bg-white p-4 md:h-[350px]">
         <div>
           <p className="text-center text-2xl font-bold pb-3 underline">
-            প্রধান শিক্ষকের বাণীঃ
+            অধ্যক্ষের বাণীঃ
           </p>
           <div className="grid md:grid-cols-2">
             <div className="flex justify-center items-center flex-col ">

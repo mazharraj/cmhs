@@ -1,4 +1,5 @@
 // eslint-disable-next-line react/prop-types
+
 export default function LoggedIn({ onLogout }) {
   return (
     <div>
@@ -14,6 +15,7 @@ export default function LoggedIn({ onLogout }) {
           Welcome To Admin Panel
         </p>
       </div>
+     
     </div>
   );
 }

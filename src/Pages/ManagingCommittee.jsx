@@ -41,7 +41,7 @@ export default function ManagingCommittee() {
         </div>
         <div className="bg-white py-2 px-4 flex md:flex-row items-center rounded-xl flex-col gap-4">
           <img
-            src="teachers/man.jpg"
+            src="teachers/nuralam.jpg"
             className="w-36 shadow-md object-cover h-[180px] md:h-full border mx-auto border-gray-400"
             alt=""
           />
@@ -57,7 +57,7 @@ export default function ManagingCommittee() {
         </div>
         <div className="bg-white py-2 px-4 flex md:flex-row items-center rounded-xl flex-col gap-4">
           <img
-            src="teachers/woman.jpg"
+            src="teachers/parvin.jpg"
             className="w-36 shadow-md object-cover h-[180px] md:h-full border mx-auto border-gray-400"
             alt=""
           />
