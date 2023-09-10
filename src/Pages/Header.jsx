@@ -158,11 +158,13 @@ function Header() {
           <GifImg />
           <div className="py-3 md:py-4 lg:py-6"></div>
           <PhotoAndNotice />
-          <div className="py-3 md:py-4 lg:py-6 bg-white">
+          <div className="py-3 mt-10 md:py-4 lg:py-6 bg-white">
             <p className="text-xl md:text-2xl lg:text-3xl bg-black text-white py-1 text-center">
               নোটিশ বোর্ডঃ
             </p>
-            <Notices />
+            <div className=" h-[400px] overflow-y-scroll">
+              <Notices />
+            </div>
           </div>
           <div className="py-3 md:py-4 lg:py-6"></div>
           <HeadMaster />

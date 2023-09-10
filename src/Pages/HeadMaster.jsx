@@ -11,15 +11,13 @@ export default function HeadMaster() {
           <div className="grid md:grid-cols-2">
             <div className="flex justify-center items-center flex-col ">
               <img
-                src="headmaster.jpg"
+                src="teachers/headmaster.jpg"
                 className="w-32 mb-2 border-2 border-blue-800 rounded-xl"
                 alt=""
               />
               <p className="text-xl font-bold">আলহাজ মোঃ শহিদুল ইসলাম</p>
               <p>এম.এ.বিএড</p>
-              <p className=" font-semibold">
-                প্রধান শিক্ষক / অধ্যক্ষ (ভারপ্রাপ্ত)
-              </p>
+              <p className=" font-semibold">প্রধান শিক্ষক</p>
             </div>
             <p className="text-justify md:pr-4 md:overflow-y-scroll text-base md:text-[18px] md:h-[270px]">
               সমস্ত শিক্ষার্থীদের সাদরে জানাই আমার অভিনন্দন। আমি আপনাদের

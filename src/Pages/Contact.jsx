@@ -23,15 +23,20 @@ const Contact = () => {
       </div>
       <div className="grid grid-cols-2 gap-4 lg:gap-0 lg:grid-cols-4 pt-8">
         <div className="text-center space-y-2">
-          <a className="mx-auto text-4xl bg-blue-900 rounded-full w-16 h-16 hover:bg-blue-700 duration-500 cursor-pointer text-white flex items-center justify-center">
+          <a
+            href="#"
+            className="mx-auto text-4xl bg-blue-900 rounded-full w-16 h-16 hover:bg-blue-700 duration-500 cursor-pointer text-white flex items-center justify-center">
             <ion-icon name="location-outline"></ion-icon>
           </a>
           <p className="md:text-xl">
-            <span className="font-bold">Address:</span> Dharerbari, Tangail
+            <span className="font-bold">Address:</span> Chowdhury Malancha,
+            Tangail
           </p>
         </div>
         <div className="text-center space-y-2">
-          <a className="mx-auto text-4xl bg-blue-900 rounded-full w-16 h-16 hover:bg-blue-700 duration-500 cursor-pointer text-white flex items-center justify-center">
+          <a
+            href="#"
+            className="mx-auto text-4xl bg-blue-900 rounded-full w-16 h-16 hover:bg-blue-700 duration-500 cursor-pointer text-white flex items-center justify-center">
             <ion-icon name="call-outline"></ion-icon>
           </a>
           <p className="md:text-xl">
@@ -39,19 +44,24 @@ const Contact = () => {
           </p>
         </div>
         <div className="text-center space-y-2">
-          <a className="mx-auto text-4xl bg-blue-900 rounded-full w-16 h-16 hover:bg-blue-700 duration-500 cursor-pointer text-white flex items-center justify-center">
+          <a
+            href="mailto:cmhs@gmail.com"
+            className="mx-auto text-4xl bg-blue-900 rounded-full w-16 h-16 hover:bg-blue-700 duration-500 cursor-pointer text-white flex items-center justify-center">
             <ion-icon name="mail-outline"></ion-icon>
           </a>
           <p className="md:text-xl">
-            <span className="font-bold">Email:</span> dbmhsc@gmail.com
+            <span className="font-bold">Email:</span> cmhs@gmail.com
           </p>
         </div>
         <div className="text-center space-y-2">
-          <a className="mx-auto text-4xl bg-blue-900 rounded-full w-16 h-16 hover:bg-blue-700 duration-500 cursor-pointer text-white flex items-center justify-center">
+          <a
+            href="www.chowdhurymhschool.com"
+            className="mx-auto text-4xl bg-blue-900 rounded-full w-16 h-16 hover:bg-blue-700 duration-500 cursor-pointer text-white flex items-center justify-center">
             <ion-icon name="globe-outline"></ion-icon>
           </a>
           <p className="md:text-xl">
-            <span className="font-bold">Website:</span> wwww.dbmhsc.edu.bd
+            <span className="font-bold">Website:</span>{" "}
+            www.chowdhurymhschool.com
           </p>
         </div>
       </div>
