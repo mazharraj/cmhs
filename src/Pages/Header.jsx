@@ -66,7 +66,7 @@ function Header() {
               Chowdhury Malancha High School
             </p>
             <p className="text-red-800 pt-2 text-base md:text-xl lg:text-3xl font-bold">
-              প্রতিষ্ঠাতাঃ মরহুম মৌলভী রফাতুল্লাহ সরকার
+              প্রতিষ্ঠাতাঃ মরহুম ইনছান আলী এডভোকেট
             </p>
           </div>
         </div>

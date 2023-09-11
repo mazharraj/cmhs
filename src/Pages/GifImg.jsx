@@ -4,7 +4,7 @@ export default function GifImg() {
   return (
     <div>
       <div className="bg-white">
-        <div className="grid grid-cols-3 gap-12 p-4">
+        <div className="grid grid-cols-3 gap-2 md:gap-6 lg:gap-12 p-4">
           <div className="border-2 rounded border-gray-200 flex items-center justify-center">
             <img src="flag.gif" className="h-auto w-full" alt="" />
           </div>

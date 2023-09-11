@@ -6,7 +6,7 @@ export default function HeadMaster() {
       <div className="grid md:grid-cols-2 gap-4 bg-white p-4 md:h-[350px]">
         <div>
           <p className="text-center text-2xl font-bold pb-3 underline">
-            অধ্যক্ষের বাণীঃ
+            প্রধান শিক্ষকের বাণীঃ
           </p>
           <div className="grid md:grid-cols-2">
             <div className="flex justify-center items-center flex-col ">
@@ -15,8 +15,8 @@ export default function HeadMaster() {
                 className="w-32 mb-2 border-2 border-blue-800 rounded-xl"
                 alt=""
               />
-              <p className="text-xl font-bold">আলহাজ মোঃ শহিদুল ইসলাম</p>
-              <p>এম.এ.বিএড</p>
+              <p className="text-xl font-bold">মোঃ আনোয়ার হোসেন</p>
+              <p>বি.এস.সি, বি.এড</p>
               <p className=" font-semibold">প্রধান শিক্ষক</p>
             </div>
             <p className="text-justify md:pr-4 md:overflow-y-scroll text-base md:text-[18px] md:h-[270px]">
