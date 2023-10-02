@@ -9,7 +9,6 @@ import PhotoAndNotice from "./PhotoAndNotice";
 import History from "./History";
 import Contact from "./Contact";
 import Admission from "./Admission";
-
 import Login from "./LogIn";
 import Attendance from "./Attendance";
 import AuthDetails from "./../components/AuthDetails";
@@ -40,11 +39,12 @@ function Header() {
 
   function updateToggle(id) {
     setToggle(id);
+    setOpen(false);
   }
   return (
     <div>
       <div className="px-3 lg:px-[60px] xl:px-[100px] max-w-[1600px] mx-auto">
-        <div className="bg-green-700 md:text-base text-sm py-2 px-4 flex items-center justify-between text-white">
+        <div className="bg-green-700 rounded md:text-base text-sm py-2 px-4 flex items-center justify-between text-white">
           <p>EIIN : 114696, MPO CODE : 4211091303</p>
 
           <div className="flex items-center gap-4">
@@ -114,7 +114,7 @@ function Header() {
               className={`${
                 toggle === 4 ? "active" : null
               } cursor-pointer hover:bg-green-500 py-3 px-4`}>
-              ভর্তি আবেদন
+              ভর্তি তথ্য
             </p>
             <p
               onClick={() => updateToggle(5)}
