@@ -41,13 +41,13 @@ export default class Students extends Component {
               ৬ষ্ঠ
             </p>
             <p className="border p-2 border-gray-600 text-base md:text-xl">
-              ১০০
+              ৮৪
             </p>
             <p className="border p-2 border-gray-600 text-base md:text-xl">
-              ৭৮
+              ৮৭
             </p>
             <p className="border p-2 border-gray-600 text-base md:text-xl">
-              ১৭৮
+              ১৭১
             </p>
           </div>
           <div className="grid grid-cols-3">
@@ -62,13 +62,13 @@ export default class Students extends Component {
               ৭ম
             </p>
             <p className="border p-2 border-gray-600 text-base md:text-xl">
-              ১২০
+              ৯৬
             </p>
             <p className="border p-2 border-gray-600 text-base md:text-xl">
-              ৮৯
+              ৮৫
             </p>
             <p className="border p-2 border-gray-600 text-base md:text-xl">
-              ২০৯
+              ১৮১
             </p>
           </div>
           <div className="grid grid-cols-3">
@@ -83,13 +83,13 @@ export default class Students extends Component {
               ৮ম
             </p>
             <p className="border p-2 border-gray-600 text-base md:text-xl">
-              ৯০
+              ৬০
             </p>
             <p className="border p-2 border-gray-600 text-base md:text-xl">
-              ৬৮
+              ৬৬
             </p>
             <p className="border p-2 border-gray-600 text-base md:text-xl">
-              ১৫৮
+              ১২৬
             </p>
           </div>
           <div className="grid grid-cols-3">
@@ -104,24 +104,22 @@ export default class Students extends Component {
               ৯ম
             </p>
             <p className="border p-2 border-gray-600 text-base md:text-xl">
-              ১০০
+              ৭০
             </p>
             <p className="border p-2 border-gray-600 text-base md:text-xl">
-              ৮০
+              ৬৮
             </p>
             <p className="border p-2 border-gray-600 text-base md:text-xl">
-              ১৮০
+              ১৩৮
             </p>
           </div>
           <div className="grid grid-cols-3">
             <p className="border p-2 border-gray-600 text-base md:text-xl">
-              ৩৫
+              ৪৬
             </p>
+            <p className="border p-2 border-gray-600 text-base md:text-xl">-</p>
             <p className="border p-2 border-gray-600 text-base md:text-xl">
-              ৪৫
-            </p>
-            <p className="border p-2 border-gray-600 text-base md:text-xl">
-              ১০০
+              ৯২
             </p>
           </div>
         </div>
@@ -131,22 +129,20 @@ export default class Students extends Component {
               ১০ম
             </p>
             <p className="border p-2 border-gray-600 text-base md:text-xl">
-              ১১০
+              ৮০
             </p>
             <p className="border p-2 border-gray-600 text-base md:text-xl">
-              ৬০
+              ৭৩
             </p>
             <p className="border p-2 border-gray-600 text-base md:text-xl">
-              ১৭০
+              ১৫৩
             </p>
           </div>
           <div className="grid grid-cols-3">
             <p className="border p-2 border-gray-600 text-base md:text-xl">
-              ৫৫
+              ৫৩
             </p>
-            <p className="border p-2 border-gray-600 text-base md:text-xl">
-              ১৫
-            </p>
+            <p className="border p-2 border-gray-600 text-base md:text-xl">-</p>
             <p className="border p-2 border-gray-600 text-base md:text-xl">
               ১০০
             </p>
@@ -157,35 +153,35 @@ export default class Students extends Component {
             <p className="border border-violet-900 p-3 font-semibol">
               মোট শিক্ষার্থীঃ
             </p>
-            <p className="border border-violet-900 p-3 text-center">৫৬০ জন</p>
+            <p className="border border-violet-900 p-3 text-center">৭৬৯ জন</p>
           </div>
           <div className="grid grid-cols-2">
             <p className="border border-violet-900 p-3 font-semibol">
               মোট ছাত্রঃ
             </p>
-            <p className="border border-violet-900 p-3 text-center">৩০০ জন</p>
+            <p className="border border-violet-900 p-3 text-center">৩৯০ জন</p>
           </div>
           <div className="grid grid-cols-2">
             <p className="border border-violet-900 p-3 font-semibol">
               মোট ছাত্রীঃ
             </p>
-            <p className="border border-violet-900 p-3 text-center">২৬০ জন</p>
+            <p className="border border-violet-900 p-3 text-center">৩৭৯ জন</p>
           </div>
           <div className="grid grid-cols-2">
             <p className="border border-violet-900 p-3 font-semibol">
               বিজ্ঞানঃ
             </p>
-            <p className="border border-violet-900 p-3 text-center">৯০ জন</p>
+            <p className="border border-violet-900 p-3 text-center">৯৯ জন</p>
           </div>
           <div className="grid grid-cols-2">
             <p className="border border-violet-900 p-3 font-semibol">
               ব্যবসায় শিক্ষাঃ
             </p>
-            <p className="border border-violet-900 p-3 text-center">৬০ জন</p>
+            <p className="border border-violet-900 p-3 text-center">-</p>
           </div>
           <div className="grid grid-cols-2">
             <p className="border border-violet-900 p-3 font-semibol">মানবিকঃ</p>
-            <p className="border border-violet-900 p-3 text-center">২০০ জন</p>
+            <p className="border border-violet-900 p-3 text-center">১৯২ জন</p>
           </div>
         </div>
       </div>

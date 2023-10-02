@@ -17,11 +17,13 @@ export default function TeachersProfile() {
             <div className="text-gray-700">
               <p>পদবী : প্রধান শিক্ষক</p>
               <p>শিক্ষাগত যোগ্যতা : বি.এস.সি , বি.এড</p>
-              <p>মোবাইল : </p>
+              <p>মোবাইল : ০১৭৭২-৭২৪৯১১ </p>
               <p>
                 ইমেইল :
-                <a href="mailto:tepablhs65@gmail.com" className="text-blue-600">
-                  -
+                <a
+                  href="mailto:anowarchmhs@gmail.com"
+                  className="text-blue-600">
+                  anowarchmhs@gmail.com
                 </a>
               </p>
             </div>
@@ -29,7 +31,7 @@ export default function TeachersProfile() {
         </div>
         <div className="bg-white py-2 px-4 flex md:flex-row flex-col gap-4">
           <img
-            src="teachers/man.jpg"
+            src="teachers/anisur1.jpg"
             className="w-36 shadow-md object-cover h-[180px] md:h-full border mx-auto border-gray-400"
             alt=""
           />
@@ -40,11 +42,13 @@ export default function TeachersProfile() {
               <p>পদবী : সহকারী প্রধান শিক্ষক</p>
               <p>শিক্ষাগত যোগ্যতা : বি.এস.সি , বি.এড</p>
 
-              <p>মোবাইল : </p>
+              <p>মোবাইল : ০১৭৬১-৫৬১৬০২</p>
               <p>
                 ইমেইল :
-                <a href="mailto:tepablhs65@gmail.com" className="text-blue-600">
-                  -
+                <a
+                  href="mailto:anisurrahman1977000@gmail.com"
+                  className="text-blue-600">
+                  anisurrahman1977000@gmail.com
                 </a>
               </p>
             </div>
@@ -52,7 +56,7 @@ export default function TeachersProfile() {
         </div>
         <div className="bg-white py-2 px-4 flex md:flex-row flex-col gap-4">
           <img
-            src="teachers/woman.jpg"
+            src="teachers/roksana.jpg"
             className="w-36 shadow-md object-cover h-[180px] md:h-full border mx-auto border-gray-400"
             alt=""
           />
@@ -75,7 +79,7 @@ export default function TeachersProfile() {
         </div>
         <div className="bg-white py-2 px-4 flex md:flex-row flex-col gap-4">
           <img
-            src="teachers/man.jpg"
+            src="teachers/habib.jpg"
             className="w-36 shadow-md object-cover h-[180px] md:h-full border mx-auto border-gray-400"
             alt=""
           />
@@ -84,13 +88,15 @@ export default function TeachersProfile() {
             <div className="bg-gray-300 w-full h-[1px]"></div>
             <div className="text-gray-700">
               <p>পদবী : সহকারী শিক্ষক (ব্যবসায় শিক্ষা)</p>
-              <p>শিক্ষাগত যোগ্যতা : বি.কম সম্মান , বি.এড</p>
+              <p>শিক্ষাগত যোগ্যতা : এম.বি.এস, বি.এড</p>
 
-              <p>মোবাইল : -</p>
+              <p>মোবাইল : ০১৭২২-৮৯৩২৩২</p>
               <p>
                 ইমেইল :
-                <a href="mailto:tepablhs65@gmail.com" className="text-blue-600">
-                  -
+                <a
+                  href="mailto:ahshanhabib324@gmail.com"
+                  className="text-blue-600">
+                  ahshanhabib324@gmail.com
                 </a>
               </p>
             </div>
@@ -98,7 +104,7 @@ export default function TeachersProfile() {
         </div>
         <div className="bg-white py-2 px-4 flex md:flex-row flex-col gap-4">
           <img
-            src="teachers/man.jpg"
+            src="teachers/bodrul.jpg"
             className="w-36 shadow-md object-cover h-[180px] md:h-full border mx-auto border-gray-400"
             alt=""
           />
@@ -107,13 +113,15 @@ export default function TeachersProfile() {
             <div className="bg-gray-300 w-full h-[1px]"></div>
             <div className="text-gray-700">
               <p>পদবী : সহকারী শিক্ষক (গণিত ও সাঃ বিজ্ঞান)</p>
-              <p>শিক্ষাগত যোগ্যতা : বি.এস.সি , বি.এড</p>
+              <p>শিক্ষাগত যোগ্যতা : এম.এস.সি (গণিত), বি.এড</p>
 
-              <p>মোবাইল : -</p>
+              <p>মোবাইল : ০১৭১৪-৫৩৮৪৬৪</p>
               <p>
                 ইমেইল :
-                <a href="mailto:tepablhs65@gmail.com" className="text-blue-600">
-                  -
+                <a
+                  href="mailto:alambodrul787@gmail.com"
+                  className="text-blue-600">
+                  alambodrul787@gmail.com
                 </a>
               </p>
             </div>
@@ -121,7 +129,7 @@ export default function TeachersProfile() {
         </div>
         <div className="bg-white py-2 px-4 flex md:flex-row flex-col gap-4">
           <img
-            src="teachers/man.jpg"
+            src="teachers/osman.jpg"
             className="w-36 shadow-md object-cover h-[180px] md:h-full border mx-auto border-gray-400"
             alt=""
           />
@@ -132,11 +140,11 @@ export default function TeachersProfile() {
               <p>পদবী : সহকারী শিক্ষক (ইসলাম ধর্ম)</p>
               <p>শিক্ষাগত যোগ্যতা : ফাজিল, কামিল</p>
 
-              <p>মোবাইল : -</p>
+              <p>মোবাইল : ০১৭৭৭-৪২৩৩৪১</p>
               <p>
                 ইমেইল :
-                <a href="mailto:tepablhs65@gmail.com" className="text-blue-600">
-                  -
+                <a href="mailto:01777osman@gmail.com" className="text-blue-600">
+                  01777osman@gmail.com
                 </a>
               </p>
             </div>
@@ -154,7 +162,7 @@ export default function TeachersProfile() {
             <div className="text-gray-700">
               <p>পদবী : সহকারী শিক্ষক (শরীর চর্চা)</p>
               <p>শিক্ষাগত যোগ্যতা : এম.বি.এ, বি.পি.এড, এম.পি.এড</p>
-              <p>মোবাইল : ---</p>
+              <p>মোবাইল : ০১৭৩৮-০৯০৫২৯</p>
               <p>
                 ইমেইল :
                 <a href="mailto:tepablhs65@gmail.com" className="text-blue-600">
@@ -166,7 +174,7 @@ export default function TeachersProfile() {
         </div>
         <div className="bg-white py-2 px-4 flex md:flex-row flex-col gap-4">
           <img
-            src="teachers/man.jpg"
+            src="teachers/rokon.jpg"
             className="w-36 shadow-md object-cover h-[180px] md:h-full border mx-auto border-gray-400"
             alt=""
           />
@@ -177,7 +185,7 @@ export default function TeachersProfile() {
               <p>পদবী : সহকারী শিক্ষক (কৃষি)</p>
               <p>শিক্ষাগত যোগ্যতা : কৃষি ডিপ্লোমা</p>
 
-              <p>মোবাইল : ---</p>
+              <p>মোবাইল : ০১৭০৯-৫৩৯২৭৮</p>
               <p>
                 ইমেইল :
                 <a href="mailto:tepablhs65@gmail.com" className="text-blue-600">
@@ -189,7 +197,7 @@ export default function TeachersProfile() {
         </div>
         <div className="bg-white py-2 px-4 flex md:flex-row flex-col gap-4">
           <img
-            src="teachers/man.jpg"
+            src="teachers/taher.jpg"
             className="w-36 shadow-md object-cover h-[180px] md:h-full border mx-auto border-gray-400"
             alt=""
           />
@@ -198,13 +206,17 @@ export default function TeachersProfile() {
             <div className="bg-gray-300 w-full h-[1px]"></div>
             <div className="text-gray-700">
               <p>পদবী : সহকারী শিক্ষক (ভৌত বিজ্ঞান)</p>
-              <p>শিক্ষাগত যোগ্যতা : স্নাতক সম্মান, বি.এড</p>
+              <p>
+                শিক্ষাগত যোগ্যতা : বি.এস-সি (সম্মান), এম.এস-সি (রসায়ন), বি.এড
+              </p>
 
-              <p>মোবাইল : ---</p>
+              <p>মোবাইল : ০১৭২১-৩৪২২৫৭</p>
               <p>
                 ইমেইল :
-                <a href="mailto:tepablhs65@gmail.com" className="text-blue-600">
-                  -
+                <a
+                  href="mailto:abutaher342257@gmail.com"
+                  className="text-blue-600">
+                  abutaher342257@gmail.com
                 </a>
               </p>
             </div>
@@ -234,7 +246,7 @@ export default function TeachersProfile() {
         </div>
         <div className="bg-white py-2 px-4 flex md:flex-row flex-col gap-4">
           <img
-            src="teachers/woman.jpg"
+            src="teachers/taslima.jpg"
             className="w-36 shadow-md object-cover h-[180px] md:h-full border mx-auto border-gray-400"
             alt=""
           />
@@ -257,7 +269,7 @@ export default function TeachersProfile() {
         </div>
         <div className="bg-white py-2 px-4 flex md:flex-row flex-col gap-4">
           <img
-            src="teachers/man.jpg"
+            src="teachers/rubel.jpg"
             className="w-36 shadow-md object-cover h-[180px] md:h-full border mx-auto border-gray-400"
             alt=""
           />
@@ -268,11 +280,13 @@ export default function TeachersProfile() {
               <p>পদবী : অফিস সহকারী কাম কম্পিউটার অপারেটর</p>
               <p>শিক্ষাগত যোগ্যতা : বি.এস.সি, এম.এস.সি</p>
 
-              <p>মোবাইল : ---</p>
+              <p>মোবাইল : ০১৭১৬-৮৯৫৯০৭</p>
               <p>
                 ইমেইল :
-                <a href="mailto:tepablhs65@gmail.com" className="text-blue-600">
-                  -
+                <a
+                  href="mailto:singerrubel46@gmail.com"
+                  className="text-blue-600">
+                  singerrubel46@gmail.com
                 </a>
               </p>
             </div>
@@ -280,7 +294,7 @@ export default function TeachersProfile() {
         </div>
         <div className="bg-white py-2 px-4 flex md:flex-row flex-col gap-4">
           <img
-            src="teachers/man.jpg"
+            src="teachers/atoar.jpg"
             className="w-36 shadow-md object-cover h-[180px] md:h-full border mx-auto border-gray-400"
             alt=""
           />
@@ -303,7 +317,7 @@ export default function TeachersProfile() {
         </div>
         <div className="bg-white py-2 px-4 flex md:flex-row flex-col gap-4">
           <img
-            src="teachers/man.jpg"
+            src="teachers/jubayer.jpg"
             className="w-36 shadow-md object-cover h-[180px] md:h-full border mx-auto border-gray-400"
             alt=""
           />
@@ -314,7 +328,7 @@ export default function TeachersProfile() {
               <p>পদবী : অফিস সহায়ক</p>
               <p>শিক্ষাগত যোগ্যতা : এস.এস.সি</p>
 
-              <p>মোবাইল : ---</p>
+              <p>মোবাইল : ০১৭৮১-২০৮৫৭৭</p>
               <p>
                 ইমেইল :
                 <a href="mailto:tepablhs65@gmail.com" className="text-blue-600">
@@ -326,7 +340,7 @@ export default function TeachersProfile() {
         </div>
         <div className="bg-white py-2 px-4 flex md:flex-row flex-col gap-4">
           <img
-            src="teachers/man.jpg"
+            src="teachers/rakib.jpg"
             className="w-36 shadow-md object-cover h-[180px] md:h-full border mx-auto border-gray-400"
             alt=""
           />
@@ -337,11 +351,13 @@ export default function TeachersProfile() {
               <p>পদবী : পরিচ্ছন্নতা কর্মী</p>
               <p>শিক্ষাগত যোগ্যতা : এস.এস.সি</p>
 
-              <p>মোবাইল : ---</p>
+              <p>মোবাইল : ০১৭১৫-৮০৬৯৫৮</p>
               <p>
                 ইমেইল :
-                <a href="mailto:tepablhs65@gmail.com" className="text-blue-600">
-                  -
+                <a
+                  href="mailto:rakibmollamolla70@gmail.com"
+                  className="text-blue-600">
+                  rakibmollamolla70@gmail.com
                 </a>
               </p>
             </div>
@@ -349,7 +365,7 @@ export default function TeachersProfile() {
         </div>
         <div className="bg-white py-2 px-4 flex md:flex-row flex-col gap-4">
           <img
-            src="teachers/man.jpg"
+            src="teachers/majedur.jpg"
             className="w-36 shadow-md object-cover h-[180px] md:h-full border mx-auto border-gray-400"
             alt=""
           />
@@ -360,11 +376,13 @@ export default function TeachersProfile() {
               <p>পদবী : নৈশ প্রহরী</p>
               <p>শিক্ষাগত যোগ্যতা : এস.এস.সি</p>
 
-              <p>মোবাইল : ---</p>
+              <p>মোবাইল : ০১৭৮২-২৭৮৩৪১</p>
               <p>
                 ইমেইল :
-                <a href="mailto:tepablhs65@gmail.com" className="text-blue-600">
-                  -
+                <a
+                  href="mailto:rohmanmazedul1@gmail.com"
+                  className="text-blue-600">
+                  rohmanmazedul1@gmail.com
                 </a>
               </p>
             </div>
@@ -372,7 +390,7 @@ export default function TeachersProfile() {
         </div>
         <div className="bg-white py-2 px-4 flex md:flex-row flex-col gap-4">
           <img
-            src="teachers/woman.jpg"
+            src="teachers/halima.jpg"
             className="w-36 shadow-md object-cover h-[180px] md:h-full border mx-auto border-gray-400"
             alt=""
           />

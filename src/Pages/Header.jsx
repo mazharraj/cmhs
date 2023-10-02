@@ -16,8 +16,8 @@ import AuthDetails from "./../components/AuthDetails";
 import { auth } from "../firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import Dashboard from "./Dashboard";
-import Notices from "./Notices";
-import Results from "./Results";
+import PbNotice from "./PbNotice";
+import Result from "./Result";
 
 function Header() {
   const [toggle, setToggle] = useState(1);
@@ -44,7 +44,7 @@ function Header() {
   return (
     <div>
       <div className="px-3 lg:px-[60px] xl:px-[100px] max-w-[1600px] mx-auto">
-        <div className="bg-green-900 md:text-base text-sm py-2 px-4 flex items-center justify-between text-white">
+        <div className="bg-green-700 md:text-base text-sm py-2 px-4 flex items-center justify-between text-white">
           <p>EIIN : 114696, MPO CODE : 4211091303</p>
 
           <div className="flex items-center gap-4">
@@ -56,7 +56,12 @@ function Header() {
         </div>
 
         <div className="py-4 flex md:flex-row flex-col md:items-center md:gap-4">
-          <img src="logo.png" className="w-20 md:w-28 h-20 md:h-28 " alt="" />
+          <img
+            src="chlogo.png
+          "
+            className="w-20 md:w-28 h-20 md:h-28 "
+            alt=""
+          />
           <div>
             <p className="font-bold text-xl md:text-3xl lg:text-5xl">
               চৌধুরী মালঞ্চ উচ্চ বিদ্যালয়
@@ -73,13 +78,13 @@ function Header() {
         <div>
           <div
             onClick={() => setOpen(!open)}
-            className="md:hidden block bg-green-900 py-2 text-white text-2xl cursor-pointer px-4">
+            className="md:hidden block bg-green-700 py-2 text-white text-2xl cursor-pointer px-4">
             <ion-icon name={open ? "close-outline" : "menu-outline"}></ion-icon>
           </div>
           <div
             className={`${
               open ? "block" : "hidden"
-            } bg-green-700 md:bg-green-900 duration-500 flex md:flex md:flex-row flex-col justify-center gap-2 lg:gap-8 md:items-center text-white`}>
+            } bg-green-700 md:bg-green-700 duration-500 flex md:flex md:flex-row flex-col justify-center gap-2 lg:gap-8 md:items-center text-white`}>
             <a
               onClick={() => updateToggle(1)}
               href="/"
@@ -116,7 +121,7 @@ function Header() {
               className={`${
                 toggle === 5 ? "active" : null
               } cursor-pointer hover:bg-green-500 py-3 px-4`}>
-              অনলাইন হাজিরা
+              ডিজিটাল হাজিরা
             </p>
             <p
               onClick={() => updateToggle(6)}
@@ -163,7 +168,7 @@ function Header() {
               নোটিশ বোর্ডঃ
             </p>
             <div className=" h-[400px] overflow-y-scroll">
-              <Notices />
+              <PbNotice />
             </div>
           </div>
           <div className="py-3 md:py-4 lg:py-6"></div>
@@ -189,7 +194,7 @@ function Header() {
         </div>
         <div className={toggle === 6 ? "block" : "hidden"}>
           <div className="py-3 md:py-4 lg:py-6"></div>
-          <Results />
+          <Result />
         </div>
         <div className={toggle === 7 ? "block" : "hidden"}>
           <div className="py-3 md:py-4 lg:py-6"></div>

@@ -9,6 +9,7 @@ import {
 } from "firebase/storage";
 import { storage } from "./../firebase";
 import { v4 } from "uuid";
+import Swal from "sweetalert2";
 
 function Pdf() {
   const [pdfUpoad, setpdfUpoad] = useState(null);
@@ -21,7 +22,7 @@ function Pdf() {
     uploadBytes(imageRef, pdfUpoad).then((snapshot) => {
       getDownloadURL(snapshot.ref).then((url) => {
         setImageUrls((prev) => [...prev, url]);
-        alert("নোটিশ সফলভাবে আপলোড হয়েছে!!");
+        Swal.fire("নোটিশ সফলভাবে আপলোড হয়েছে!!");
       });
     });
   };

@@ -1,8 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { getStorage, ref, listAll, getDownloadURL } from "firebase/storage";
+import {
+  getStorage,
+  ref,
+  listAll,
+  getDownloadURL,
+  deleteObject,
+} from "firebase/storage";
+import Swal from "sweetalert2";
 
 const storage = getStorage(); // Initialize Firebase Storage
-const ResultsRef = ref(storage, "Results"); // Reference to the "Results" folder in your Storage bucket
+const resultsRef = ref(storage, "Results"); // Reference to the "Results" folder in your Storage bucket
 
 function Results() {
   const [fileNames, setFileNames] = useState([]);
@@ -13,7 +20,7 @@ function Results() {
   }, []);
 
   const listFileNames = () => {
-    listAll(ResultsRef)
+    listAll(resultsRef)
       .then((result) => {
         // Extract the names of all files in the "Results" folder
         const fileNames = result.items.map((item) => item.name);
@@ -27,7 +34,7 @@ function Results() {
   const openFileInNewTab = async (fileName) => {
     try {
       // Create a reference to the file to be opened
-      const fileRef = ref(ResultsRef, fileName);
+      const fileRef = ref(resultsRef, fileName);
 
       // Get the download URL of the file
       const downloadURL = await getDownloadURL(fileRef);
@@ -39,19 +46,38 @@ function Results() {
     }
   };
 
+  const deleteFile = async (fileName) => {
+    try {
+      // Create a reference to the file to be deleted
+      const fileRef = ref(resultsRef, fileName);
+      Swal.fire("Result Deleted Successfully!");
+      // Delete the file from Firebase Storage
+      await deleteObject(fileRef);
+
+      // Update the file list after deleting
+      listFileNames();
+    } catch (error) {
+      console.error("Error deleting file:", error);
+    }
+  };
+
   return (
     <div className="p-4">
       <p className="bg-black mb-4 text-white text-xl md:text-2xl lg:text-3xl px-4 py-4">
         বিদ্যালয়ের আভ্যন্তরীন পরীক্ষার ফলাফলঃ
       </p>
-      <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-">
+      <ul className="">
         {fileNames.map((fileName) => (
-          <li
-            className="duration-500 bg-gradient-to-r from-green-300 to-green-500 hover:bg-gradient-to-r hover:from-red-300 hover:to-red-500 rounded shadow-md h-[50px] md:h-[150px] text-base md:text-xl lg:text-2xl flex justify-center items-center cursor-pointer hover:bg-gray-900 hover:text-white"
-            key={fileName}
-            onClick={() => openFileInNewTab(fileName)}>
-            {fileName.split(".").slice(0, -1).join(".")}{" "}
-            {/* Hide text after the file extension */}
+          <li key={fileName} className="mb-2 flex items-start gap-4">
+            <div className="bg-violet-600 w-full hover:bg-violet-800 rounded shadow-md py-1 flex px-4 text-white cursor-pointer">
+              {fileName.split(".").slice(0, -1).join(".")}{" "}
+              {/* Hide text after the file extension */}
+            </div>
+            <button
+              className="bg-red-600 hover:bg-red-700 rounded py-1 px-4 text-white"
+              onClick={() => deleteFile(fileName)}>
+              Delete
+            </button>
           </li>
         ))}
       </ul>

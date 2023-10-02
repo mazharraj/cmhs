@@ -42,7 +42,7 @@ const AuthDetails = () => {
           </div>
         </>
       ) : (
-        <p className="bg-red-500 py-1 px-4 text-white">Signed Out</p>
+        <p></p>
       )}
     </div>
   );

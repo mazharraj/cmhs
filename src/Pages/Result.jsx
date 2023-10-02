@@ -1,133 +1,62 @@
-// import React from "react";
-// import Results from "./Results";
+import React, { useEffect, useState } from "react";
+import { getStorage, ref, listAll, getDownloadURL } from "firebase/storage";
 
-// export default function Result() {
-//   return (
-//     <div className="bg-white p-2">
-//       <div className="mb-4">
-//         <p className="bg-black text-white text-xl md:text-2xl lg:text-3xl px-4 py-4">
-//           বিদ্যালয়ের আভ্যন্তরীন পরীক্ষার ফলাফলঃ
-//         </p>
-//       </div>
-//       <Results />
-//       {/* <p className="bg-black text-white text-xl md:text-2xl lg:text-3xl px-4 py-4 mb-2">
-//         বোর্ড পরীক্ষার ফলাফলঃ
-//       </p>
-//       <p className="text-xl text-violet-900 font-semibold pb-2 md:text-2xl lg:text-3xl">
-//         বিগত সালের এস.এস.সি পরীক্ষার ফলাফলঃ
-//       </p>
-//       <div className="grid grid-cols-5">
-//         <p className="border border-black text-sm md:text-base py-1 md:font-semibold text-center  md:p-2">
-//           সাল
-//         </p>
-//         <p className="border border-black text-sm md:text-base py-1 md:font-semibold text-center  md:p-2">
-//           পরীক্ষার্থীদের সংখ্যা
-//         </p>
-//         <p className="border border-black text-sm md:text-base py-1 md:font-semibold text-center  md:p-2">
-//           পাশের সংখ্যা
-//         </p>
-//         <p className="border border-black text-sm md:text-base py-1 md:font-semibold text-center  md:p-2">
-//           পাশের হার
-//         </p>
-//         <p className="border border-black text-sm md:text-base py-1 md:font-semibold text-center  md:p-2">
-//           A+
-//         </p>
-//       </div>
+const storage = getStorage(); // Initialize Firebase Storage
+const ResultsRef = ref(storage, "Results"); // Reference to the "Results" folder in your Storage bucket
 
-//       <div className="grid grid-cols-5">
-//         <p className="border border-violet-300 p-2">২০২৩</p>
-//         <p className="border border-violet-300 p-2">২৬০</p>
-//         <p className="border border-violet-300 p-2">২৩৮</p>
-//         <p className="border border-violet-300 p-2">৯১.৫৩%</p>
-//         <p className="border border-violet-300 p-2">১১</p>
-//       </div>
+function Result() {
+  const [fileNames, setFileNames] = useState([]);
 
-//       <div className="grid grid-cols-5">
-//         <p className="border border-violet-300 p-2">২০২২</p>
-//         <p className="border border-violet-300 p-2">২৫০</p>
-//         <p className="border border-violet-300 p-2">২৪৩</p>
-//         <p className="border border-violet-300 p-2">৯৭.০৬%</p>
-//         <p className="border border-violet-300 p-2">১৬</p>
-//       </div>
-//       <div className="grid grid-cols-5">
-//         <p className="border border-violet-300 p-2">২০২১</p>
-//         <p className="border border-violet-300 p-2">২৩১</p>
-//         <p className="border border-violet-300 p-2">২২২</p>
-//         <p className="border border-violet-300 p-2">৯৬.১০%</p>
-//         <p className="border border-violet-300 p-2">২১</p>
-//       </div>
-//       <div className="grid grid-cols-5">
-//         <p className="border border-violet-300 p-2">২০২০</p>
-//         <p className="border border-violet-300 p-2">২১৯</p>
-//         <p className="border border-violet-300 p-2">২১৯</p>
-//         <p className="border border-violet-300 p-2">১০০%</p>
-//         <p className="border border-violet-300 p-2">৩</p>
-//       </div>
-//       <div className="grid grid-cols-5">
-//         <p className="border border-violet-300 p-2">২০১৯</p>
-//         <p className="border border-violet-300 p-2">১২৩</p>
-//         <p className="border border-violet-300 p-2">১২৩</p>
-//         <p className="border border-violet-300 p-2">১০০%</p>
-//         <p className="border border-violet-300 p-2">-</p>
-//       </div>
+  useEffect(() => {
+    // Fetch and set the file names when the component mounts
+    listFileNames();
+  }, []);
 
-//       <p className="text-xl text-violet-900 font-semibold pb-2 mt-4 lg:mt-10 md:text-2xl lg:text-3xl">
-//         বিগত সালের এইচ.এস.সি পরীক্ষার ফলাফলঃ
-//       </p>
-//       <div className="grid grid-cols-5">
-//         <p className="border border-black text-sm md:text-base py-1 md:font-semibold text-center  md:p-2">
-//           সাল
-//         </p>
-//         <p className="border border-black text-sm md:text-base py-1 md:font-semibold text-center  md:p-2">
-//           পরীক্ষার্থীদের সংখ্যা
-//         </p>
-//         <p className="border border-black text-sm md:text-base py-1 md:font-semibold text-center  md:p-2">
-//           পাশের সংখ্যা
-//         </p>
-//         <p className="border border-black text-sm md:text-base py-1 md:font-semibold text-center  md:p-2">
-//           পাশের হার
-//         </p>
-//         <p className="border border-black text-sm md:text-base py-1 md:font-semibold text-center  md:p-2">
-//           A+
-//         </p>
-//       </div>
+  const listFileNames = () => {
+    listAll(ResultsRef)
+      .then((result) => {
+        // Extract the names of all files in the "Results" folder
+        const fileNames = result.items.map((item) => item.name);
+        setFileNames(fileNames);
+      })
+      .catch((error) => {
+        console.error("Error listing files:", error);
+      });
+  };
 
-//       <div className="grid grid-cols-5">
-//         <p className="border border-violet-300 p-2">২০২৩</p>
-//         <p className="border border-violet-300 p-2">২৬০</p>
-//         <p className="border border-violet-300 p-2">২৩৮</p>
-//         <p className="border border-violet-300 p-2">৯১.৫৩%</p>
-//         <p className="border border-violet-300 p-2">১১</p>
-//       </div>
+  const openFileInNewTab = async (fileName) => {
+    try {
+      // Create a reference to the file to be opened
+      const fileRef = ref(ResultsRef, fileName);
 
-//       <div className="grid grid-cols-5">
-//         <p className="border border-violet-300 p-2">২০২২</p>
-//         <p className="border border-violet-300 p-2">২৫০</p>
-//         <p className="border border-violet-300 p-2">২৪৩</p>
-//         <p className="border border-violet-300 p-2">৯৭.০৬%</p>
-//         <p className="border border-violet-300 p-2">১৬</p>
-//       </div>
-//       <div className="grid grid-cols-5">
-//         <p className="border border-violet-300 p-2">২০২১</p>
-//         <p className="border border-violet-300 p-2">২৩১</p>
-//         <p className="border border-violet-300 p-2">২২২</p>
-//         <p className="border border-violet-300 p-2">৯৬.১০%</p>
-//         <p className="border border-violet-300 p-2">২১</p>
-//       </div>
-//       <div className="grid grid-cols-5">
-//         <p className="border border-violet-300 p-2">২০২০</p>
-//         <p className="border border-violet-300 p-2">২১৯</p>
-//         <p className="border border-violet-300 p-2">২১৯</p>
-//         <p className="border border-violet-300 p-2">১০০%</p>
-//         <p className="border border-violet-300 p-2">৩</p>
-//       </div>
-//       <div className="grid grid-cols-5">
-//         <p className="border border-violet-300 p-2">২০১৯</p>
-//         <p className="border border-violet-300 p-2">১২৩</p>
-//         <p className="border border-violet-300 p-2">১২৩</p>
-//         <p className="border border-violet-300 p-2">১০০%</p>
-//         <p className="border border-violet-300 p-2">-</p>
-//       </div> */}
-//     </div>
-//   );
-// }
+      // Get the download URL of the file
+      const downloadURL = await getDownloadURL(fileRef);
+
+      // Open the file in a new browser tab or window
+      window.open(downloadURL, "_blank");
+    } catch (error) {
+      console.error("Error opening file:", error);
+    }
+  };
+
+  return (
+    <div className="p-4">
+      <p className="bg-black mb-4 text-white text-xl md:text-2xl lg:text-3xl px-4 py-4">
+        বিদ্যালয়ের আভ্যন্তরীন পরীক্ষার ফলাফলঃ
+      </p>
+      <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {fileNames.map((fileName) => (
+          <li
+            className="bg-green-700 hover:bg-green-800 py-2 px-4 duration-500 rounded shadow-md text-xl flex justify-center items-center cursor-pointer text-white"
+            key={fileName}
+            onClick={() => openFileInNewTab(fileName)}>
+            {fileName.split(".").slice(0, -1).join(".")}{" "}
+            {/* Hide text after the file extension */}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default Result;

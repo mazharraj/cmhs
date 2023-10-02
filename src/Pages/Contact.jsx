@@ -24,7 +24,8 @@ const Contact = () => {
       <div className="grid grid-cols-2 gap-4 lg:gap-0 lg:grid-cols-4 pt-8">
         <div className="text-center space-y-2">
           <a
-            href="#"
+            href="https://maps.app.goo.gl/GPf9A98FcVzCXD6C8"
+            target="blank"
             className="mx-auto text-4xl bg-blue-900 rounded-full w-16 h-16 hover:bg-blue-700 duration-500 cursor-pointer text-white flex items-center justify-center">
             <ion-icon name="location-outline"></ion-icon>
           </a>
@@ -35,12 +36,12 @@ const Contact = () => {
         </div>
         <div className="text-center space-y-2">
           <a
-            href="#"
+            href="call:+8801309-114696"
             className="mx-auto text-4xl bg-blue-900 rounded-full w-16 h-16 hover:bg-blue-700 duration-500 cursor-pointer text-white flex items-center justify-center">
             <ion-icon name="call-outline"></ion-icon>
           </a>
           <p className="md:text-xl">
-            <span className="font-bold">Phone:</span> ০১২৩৪-১২৩৪৫৬
+            <span className="font-bold">Phone:</span> ০১৩০৯-১১৪৬৯৬
           </p>
         </div>
         <div className="text-center space-y-2">

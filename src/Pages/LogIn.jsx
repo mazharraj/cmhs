@@ -4,11 +4,11 @@ import SignUp from "./../components/auth/SignUp";
 
 const LogIn = () => {
   return (
-    <div className="grid md:grid-cols-2 gap-12">
-      <div className="px-1">
+    <div className="lg:px-[200px]">
+      <div className="px-1 ">
         <SignIn />
       </div>
-      <SignUp />
+      {/* <SignUp /> */}
     </div>
   );
 };

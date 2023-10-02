@@ -9,6 +9,7 @@ import {
 } from "firebase/storage";
 import { storage } from "../firebase";
 import { v4 } from "uuid";
+import Swal from "sweetalert2";
 
 function Res() {
   const [ResUpoad, setResUpoad] = useState(null);
@@ -21,7 +22,7 @@ function Res() {
     uploadBytes(imageRef, ResUpoad).then((snapshot) => {
       getDownloadURL(snapshot.ref).then((url) => {
         setImageUrls((prev) => [...prev, url]);
-        alert("পরীক্ষার ফলাফল সফলভাবে আপলোড হয়েছে!!");
+        Swal.fire("পরীক্ষার ফলাফল সফলভাবে আপলোড হয়েছে!!");
       });
     });
   };
